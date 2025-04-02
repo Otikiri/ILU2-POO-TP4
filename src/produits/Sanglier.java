@@ -1,4 +1,4 @@
-package produit;
+package produits;
 
 import personnages.Gaulois;
 
@@ -14,7 +14,6 @@ public class Sanglier extends Produit {
 	@Override
 	public void decrireProduit() {
 		Unite unit = this.getUnite();
-		
 		System.out.println(this.getNom()+" de "+poids+" "+unit.toString()+" par "+chasseur.getNom());
 	} 
 	

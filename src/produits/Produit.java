@@ -1,4 +1,4 @@
-package produit;
+package produits;
 
 public abstract class Produit {
 	private String nom; 

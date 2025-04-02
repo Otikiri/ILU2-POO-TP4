@@ -1,4 +1,4 @@
-package produit;
+package produits;
 
 public class Poisson extends Produit {
 	private String date;

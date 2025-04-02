@@ -1,6 +1,9 @@
 package scenarioTest;
 
+import produits.Poisson;
+import produits.Sanglier;
 import villagegaulois.Etal;
+import villagegaulois.IEtal;
 
 public class ScenarioTest {
 
@@ -31,7 +34,10 @@ public class ScenarioTest {
 	}
 
 	public static void main(String[] args) {
-
+		IEtal<Sanglier>[] marche = new IEtal[3];
+		Etal<Sanglier> etalSanglier = new Etal<>();
+		marche[0] = etalSanglier;
+		marche[1] = new Etal<Poisson>();
 	}
 
 }
