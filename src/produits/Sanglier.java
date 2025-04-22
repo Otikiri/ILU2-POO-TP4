@@ -12,10 +12,16 @@ public class Sanglier extends Produit {
 	}
 	
 	@Override
-	public void decrireProduit() {
+	public String decrireProduit() {
 		Unite unit = this.getUnite();
-		System.out.println(this.getNom()+" de "+poids+" "+unit.toString()+" par "+chasseur.getNom());
-	} 
+		return this.getNom()+" de "+poids+" "+unit.toString()+" par "+chasseur.getNom();
+	}
+
+	@Override
+	public int calculerPrix(int prix) {
+		return (int) Math.floor(poids*prix);
+	}
+
 	
 	
 }
