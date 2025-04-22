@@ -19,7 +19,7 @@ public class Sanglier extends Produit {
 
 	@Override
 	public int calculerPrix(int prix) {
-		return (int) Math.floor(poids*prix);
+		return (int) Math.floor(((poids*prix)/1000));
 	}
 
 	

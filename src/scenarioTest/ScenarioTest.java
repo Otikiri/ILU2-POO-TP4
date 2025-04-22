@@ -55,13 +55,19 @@ public class ScenarioTest {
 		Etal<Sanglier> etalSanglierObelix = new Etal<>();
 		Etal<Sanglier> etalSanglierAsterix = new Etal<>();
 		Etal<Poisson> etalPoisson = new Etal<>();
-		marche[0] = etalSanglierObelix;
-		marche[1] = etalSanglierAsterix; 
+		marche[1] = etalSanglierObelix;
+		marche[0] = etalSanglierAsterix; 
 		marche[2] = etalPoisson;
 		
 		etalPoisson.installerVendeur(ordralfabetix, poissons, 7);
 		etalSanglierAsterix.installerVendeur(asterix, sangliersAsterix, 10);
 		etalSanglierObelix.installerVendeur(obelix, sangliersObelix, 8);
+		
+		for (int i = 0; i < marche.length; i++) {
+			System.out.println(marche[i].etatEtal());
+		}
+		System.out.println("A l'etal n'1 , j'achete 2 sanglier et je paye "+etalSanglierAsterix.acheterProduit(2));
+		System.out.println("A l'etal n'2 , j'achete 1 sanglier et je paye "+etalSanglierObelix.acheterProduit(1)+"\n");
 		
 		for (int i = 0; i < marche.length; i++) {
 			System.out.println(marche[i].etatEtal());
